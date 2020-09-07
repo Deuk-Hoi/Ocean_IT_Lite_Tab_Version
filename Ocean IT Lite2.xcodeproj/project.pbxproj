@@ -14,6 +14,9 @@
 		6443AC2724AB272900B8E53E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6443AC2524AB272900B8E53E /* Main.storyboard */; };
 		6443AC2924AB272A00B8E53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6443AC2824AB272A00B8E53E /* Assets.xcassets */; };
 		6443AC2C24AB272A00B8E53E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6443AC2A24AB272A00B8E53E /* LaunchScreen.storyboard */; };
+		6443AC3524AB273500B8E53E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6443AC3424AB273500B8E53E /* WebKit.framework */; };
+		6443AC3724AB2ACD00B8E53E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6443AC3624AB2ACD00B8E53E /* ThirdViewController.swift */; };
+		6443AC3924AB2B0000B8E53E /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6443AC3824AB2B0000B8E53E /* ForthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		6443AC2824AB272A00B8E53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6443AC2B24AB272A00B8E53E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6443AC2D24AB272A00B8E53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6443AC3424AB273500B8E53E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6443AC3624AB2ACD00B8E53E /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		6443AC3824AB2B0000B8E53E /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6443AC3524AB273500B8E53E /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,7 @@
 			children = (
 				6443AC1C24AB272900B8E53E /* Ocean IT Lite2 */,
 				6443AC1B24AB272900B8E53E /* Products */,
+				6443AC3324AB273400B8E53E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,13 +69,23 @@
 				6443AC1D24AB272900B8E53E /* AppDelegate.swift */,
 				6443AC1F24AB272900B8E53E /* SceneDelegate.swift */,
 				6443AC2124AB272900B8E53E /* FirstViewController.swift */,
+				6443AC3624AB2ACD00B8E53E /* ThirdViewController.swift */,
 				6443AC2324AB272900B8E53E /* SecondViewController.swift */,
 				6443AC2524AB272900B8E53E /* Main.storyboard */,
+				6443AC3824AB2B0000B8E53E /* ForthViewController.swift */,
 				6443AC2824AB272A00B8E53E /* Assets.xcassets */,
 				6443AC2A24AB272A00B8E53E /* LaunchScreen.storyboard */,
 				6443AC2D24AB272A00B8E53E /* Info.plist */,
 			);
 			path = "Ocean IT Lite2";
+			sourceTree = "<group>";
+		};
+		6443AC3324AB273400B8E53E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6443AC3424AB273500B8E53E /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6443AC3924AB2B0000B8E53E /* ForthViewController.swift in Sources */,
 				6443AC2424AB272900B8E53E /* SecondViewController.swift in Sources */,
 				6443AC2224AB272900B8E53E /* FirstViewController.swift in Sources */,
+				6443AC3724AB2ACD00B8E53E /* ThirdViewController.swift in Sources */,
 				6443AC1E24AB272900B8E53E /* AppDelegate.swift in Sources */,
 				6443AC2024AB272900B8E53E /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +309,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7U93VG2P3;
 				INFOPLIST_FILE = "Ocean IT Lite2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +328,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7U93VG2P3;
 				INFOPLIST_FILE = "Ocean IT Lite2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
