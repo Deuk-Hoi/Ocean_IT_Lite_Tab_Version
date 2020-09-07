@@ -20,6 +20,11 @@ class ThirdViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
         super.viewDidLoad()
         SecondWebview.navigationDelegate = self
         self.request(url: oceanLink + "deviceManagement.do")
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshWebView(_:)), for: UIControl.Event.valueChanged)
+        SecondWebview.scrollView.addSubview(refreshControl)
+        SecondWebview.scrollView.bounces = true
 
     }
     
@@ -38,5 +43,11 @@ class ThirdViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
     }
     func webView(_ SecondWebview: WKWebView, didFinish navigation: WKNavigation!) {
            SecondIndicator.stopAnimating()
+    }
+    @objc
+    func refreshWebView(_ sender: UIRefreshControl) {
+        //SecondWebview.reload() //현재 로드된 URL을 리 로딩 하려면 사용
+        self.request(url: oceanLink + "deviceManagement.do") //처음 불러온 URL을 불러오려면 사용
+        sender.endRefreshing()
     }
 }
