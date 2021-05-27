@@ -1,4 +1,23 @@
-# Ocean_IT_Lite_Tab_Version
-Ocean IT Lite for IOS Use Tabbed View
-해양 IT융합기술 연구소의 IOS 앱으로 현재는 분산형 수중 관측망기능을 보여주는 기능만
-지원하는 OcenaIT Lite 버전입니다. Android와 동일한 애플리케이션은 제작중으로 추후 공개하도록 하겠습니다.
+# 해양 IT 융합기술연구소 분산형 수중 관측망 APP
+### 분산형 수중 관측망 확인 웹 페이지의 편리한 접근을 위해 개발
+### 제작에 사용된 기술
+
+> APP : Swift, StoryBoard
+
+## 제작 계획
+<p>
+    <ul>
+        <li>앱(APP) - IOS</li>
+        <ul>
+            <li>김득회</li>
+        </ul>
+    </ul>
+</p>
+<br>
+
+#### 제작 기간 : `2020.06.29 ~ 2020.11.30
+> Android Native 형식으로 APP 개발
+
+### 설명
+- 해양 IT융합기술 연구소의 IOS 앱으로 현재는 분산형 수중 관측망기능을 확인할 수 있는 애플리케이션입니다.
+- 이용자들이 쉽게 사용하기 위해 Tabbed View를 적용하였습니다.
